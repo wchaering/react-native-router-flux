@@ -10,7 +10,7 @@ import React, {
   Component,
   PropTypes,
 } from 'react';
-import { BackAndroid } from 'react-native';
+import { BackHandler as BackAndroid } from 'react-native';
 import NavigationExperimental from 'react-native-experimental-navigation';
 
 import Actions, { ActionMap } from './Actions';
