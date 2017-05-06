@@ -52,8 +52,9 @@ class Router extends Component {
   }
 
   componentDidMount() {
-    if (Platform.OS === 'android')
-    BackAndroid.addEventListener('hardwareBackPress', this.handleBackAndroid);
+    if (Platform.OS === 'android') {
+      BackAndroid.addEventListener('hardwareBackPress', this.handleBackAndroid);
+    }
   }
 
   componentWillReceiveProps(props) {
@@ -62,8 +63,9 @@ class Router extends Component {
   }
 
   componentWillUnmount() {
-    if (Platform.OS === 'android')
-    BackAndroid.removeEventListener('hardwareBackPress', this.handleBackAndroid);
+    if (Platform.OS === 'android') {
+      BackAndroid.removeEventListener('hardwareBackPress', this.handleBackAndroid);
+    }
   }
 
   handleBackAndroid() {
